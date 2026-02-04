@@ -1,0 +1,53 @@
+/* Stylesheet for website*/
+:root{
+    --border-button:grey outset 3px;
+}
+.top-box{
+    width: 98.7%;
+    height: 150px;
+    color:rgb(245, 92, 92);
+    padding:10px;
+    border:var(--border-button);
+    background-color: #c9c9c9;
+    z-index:-1;
+}
+.top-links {
+    font-family:Trebuchet;
+    display:inline;
+    text-align:center;
+    text-decoration: underline;
+    padding-bottom:40px;
+    padding: top 20px;
+    
+    
+}
+
+/* when hover it shoudl turn into a retro mouse*/
+
+.link-button{
+    width: 80px;
+    height: 40px;
+    display: inline;
+    margin-left: 25px;
+    padding:10px;
+    position:relative;
+    top: 70px;
+    border:var(--border-button)
+    
+    
+}
+h2{
+    font-size: 30px;
+    position:relative;
+    left:10px;
+    top:5px;
+}
+.color-strip{
+    background-color: pink;
+    width: 98.9%;
+    height: 45px;
+    z-index:1;
+    position: relative;
+    top: 60px;
+    left: 8.8px;
+}
