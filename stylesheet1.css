@@ -266,10 +266,10 @@ body {
   width: 100%;
   background: repeating-linear-gradient(
     90deg,
-    #3b6fc3 0px,
-    #3b6fc3 14px,
-    #6ba5e8 14px,
-    #6ba5e8 16px
+    #e348e9 0px,
+    #b124b1 14px,
+    #6bcbe8 14px,
+    #e86bbe 16px
   );
   animation: progress-anim 1.5s ease-out forwards;
 }
