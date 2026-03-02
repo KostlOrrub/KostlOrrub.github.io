@@ -1,11 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MY PORTFOLIO.exe</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <h1>Avery's First Website</h1>
+
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <div class="nav-logo">💾 MY_PORTFOLIO.exe</div>
+    <ul class="nav-links">
+      <li><a href="#welcome-section">🏠 Home</a></li>
+      <li><a href="#projects">💻 Projects</a></li>
+      <li><a href="#profile">🧍 Profile</a></li>
+      <li><a href="#social">📱 Social</a></li>
+    </ul>
+  </nav>
+
+  <!-- WELCOME SECTION -->
+  <section id="welcome-section">
+    <div class="scanlines"></div>
+    <div class="welcome-window xp-window">
+      <div class="xp-titlebar">
+        <span class="xp-title"><img src="https://cdn-icons-png.flaticon.com/16/888/888879.png" alt="" width="14"> Welcome.exe</span>
+        <div class="xp-buttons">
+          <button class="xp-btn minimize">_</button>
+          <button class="xp-btn maximize">□</button>
+          <button class="xp-btn close">✕</button>
+        </div>
+      </div>
+      <div class="xp-body">
+        <div class="xp-icon-row">⚠️</div>
+        <h1>Hi, I'm Alex — a Future Developer!</h1>
+        <p>Welcome to my portfolio. Please do not turn off your computer while this page is loading... 🖥️</p>
+        <div class="xp-progress-bar">
+          <div class="xp-progress-fill"></div>
+        </div>
+        <p class="small-text">Loading awesome stuff... 100%</p>
+        <div class="xp-btn-row">
+          <a href="#projects" class="xp-action-btn">View Projects</a>
+          <a href="#social" class="xp-action-btn">Contact Me</a>
+        </div>
+      </div>
+    </div>
+    <div class="floating-icons">
+      <span style="--x:10%;--y:20%;--d:0s">🖥️</span>
+      <span style="--x:80%;--y:15%;--d:0.5s">📀</span>
+      <span style="--x:5%;--y:70%;--d:1s">💿</span>
+      <span style="--x:88%;--y:65%;--d:1.5s">🖱️</span>
+      <span style="--x:50%;--y:85%;--d:0.3s">📟</span>
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <section id="projects">
+    <h2 class="section-title">💻 Projects</h2>
+    <div class="error-popup xp-window">
+      <div class="xp-titlebar error">
+        <span class="xp-title">⚠️ project_1.exe — ERROR</span>
+        <div class="xp-buttons">
+          <button class="xp-btn minimize">_</button>
+          <button class="xp-btn maximize">□</button>
+          <button class="xp-btn close">✕</button>
+        </div>
+      </div>
+      <div class="xp-body">
+        <div class="error-icon-row"><span class="big-icon">🚨</span></div>
+        <h3>Portfolio Website</h3>
+        <p>The very page you're looking at! Built with HTML, CSS, and pure 2001 energy. No frameworks, no crying — just vibes and inline comments.</p>
+        <div class="xp-btn-row">
+          <a href="https://github.com" target="_blank" class="xp-action-btn">View on GitHub →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="error-popup xp-window">
+      <div class="xp-titlebar error">
+        <span class="xp-title">⚠️ project_2.exe — ERROR</span>
+        <div class="xp-buttons">
+          <button class="xp-btn minimize">_</button>
+          <button class="xp-btn maximize">□</button>
+          <button class="xp-btn close">✕</button>
+        </div>
+      </div>
+      <div class="xp-body">
+        <div class="error-icon-row"><span class="big-icon">🛑</span></div>
+        <h3>Todo App 3000</h3>
+        <p>A JavaScript todo app that will definitely remember your tasks (until you refresh the page). Built to practice DOM manipulation.</p>
+        <div class="xp-btn-row">
+          <a href="https://github.com" target="_blank" class="xp-action-btn">View on GitHub →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="error-popup xp-window">
+      <div class="xp-titlebar error">
+        <span class="xp-title">⚠️ project_3.exe — ERROR</span>
+        <div class="xp-buttons">
+          <button class="xp-btn minimize">_</button>
+          <button class="xp-btn maximize">□</button>
+          <button class="xp-btn close">✕</button>
+        </div>
+      </div>
+      <div class="xp-body">
+        <div class="error-icon-row"><span class="big-icon">⚙️</span></div>
+        <h3>Weather App</h3>
+        <p>Fetches weather from an API so you know to grab your umbrella. Sometimes the fetch fails. It's part of the charm.</p>
+        <div class="xp-btn-row">
+          <a href="https://github.com" target="_blank" class="xp-action-btn">View on GitHub →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROFILE SECTION -->
+  <section id="profile">
+    <h2 class="section-title">🧍 Profile</h2>
+    <div class="xp-window profile-window">
+      <div class="xp-titlebar">
+        <span class="xp-title">📋 Alex_Bio.txt — Notepad</span>
+        <div class="xp-buttons">
+          <button class="xp-btn minimize">_</button>
+          <button class="xp-btn maximize">□</button>
+          <button class="xp-btn close">✕</button>
+        </div>
+      </div>
+      <div class="xp-body notepad-body">
+        <div class="timeline">
+          <div class="timeline-item">
+            <span class="year">2005</span>
+            <p>🐣 Born into a world with dial-up internet and Limewire. Immediately suspicious of viruses.</p>
+          </div>
+          <div class="timeline-item">
+            <span class="year">2015</span>
+            <p>🎮 Discovered you could inspect-element anything. First hack: changing the school lunch menu to say "pizza every day."</p>
+          </div>
+          <div class="timeline-item">
+            <span class="year">2020</span>
+            <p>💡 Wrote first "Hello World" in Python. Cried. Then wrote it in JavaScript. Cried again, but differently.</p>
+          </div>
+          <div class="timeline-item">
+            <span class="year">2023</span>
+            <p>🎓 Enrolled in coding bootcamp. Started building real projects. Still Googling how to center a div.</p>
+          </div>
+          <div class="timeline-item">
+            <span class="year">NOW</span>
+            <p>🚀 Actively looking for opportunities to build cool things with cool people. You're looking at exhibit A.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOCIAL SECTION -->
+  <section id="social">
+    <h2 class="section-title">📱 Social</h2>
+    <div class="social-grid">
+
+      <div class="xp-window social-card">
+        <div class="xp-titlebar">
+          <span class="xp-title">🖥️ GitHub.exe</span>
+          <div class="xp-buttons">
+            <button class="xp-btn close">✕</button>
+          </div>
+        </div>
+        <div class="xp-body social-body">
+          <div class="social-icon">🐙</div>
+          <h3>GitHub</h3>
+          <p>Where my code lives (and dies).</p>
+          <a href="https://github.com" target="_blank" class="xp-action-btn">Visit Profile</a>
+        </div>
+      </div>
+
+      <div class="xp-window social-card">
+        <div class="xp-titlebar">
+          <span class="xp-title">💼 LinkedIn.exe</span>
+          <div class="xp-buttons">
+            <button class="xp-btn close">✕</button>
+          </div>
+        </div>
+        <div class="xp-body social-body">
+          <div class="social-icon">💼</div>
+          <h3>LinkedIn</h3>
+          <p>Professional me. Same jokes, better font.</p>
+          <a href="https://linkedin.com" target="_blank" class="xp-action-btn">Connect</a>
+        </div>
+      </div>
+
+      <div class="xp-window social-card">
+        <div class="xp-titlebar">
+          <span class="xp-title">🎮 CodeWars.exe</span>
+          <div class="xp-buttons">
+            <button class="xp-btn close">✕</button>
+          </div>
+        </div>
+        <div class="xp-body social-body">
+          <div class="social-icon">⚔️</div>
+          <h3>CodeWars</h3>
+          <p>Where I fight algorithms at 2am.</p>
+          <a href="https://codewars.com" target="_blank" class="xp-action-btn">Duel Me</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="xp-window footer-window">
+      <div class="xp-titlebar">
+        <span class="xp-title">📝 footer.exe</span>
+      </div>
+      <div class="xp-body">
+        <p>© 2025 Alex · Made with 💾 and dial-up dreams · Best viewed in Internet Explorer 6.0</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Close buttons do a little shake animation
+    document.querySelectorAll('.xp-btn.close').forEach(btn => {
+      btn.addEventListener('click', function () {
+        const win = this.closest('.xp-window');
+        win.style.animation = 'shake 0.4s ease';
+        setTimeout(() => { win.style.animation = ''; }, 400);
+      });
+    });
+  </script>
 </body>
 </html>
