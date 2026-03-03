@@ -6,6 +6,7 @@ body {
   height: 100vh;
   overflow: hidden;
   font-family: 'Trebuchet MS', Tahoma, sans-serif;
+  cursor: url('icons8-cursor-32.png'), auto; 
 }
 
 /* ── DESKTOP / WALLPAPER ── */

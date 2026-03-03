@@ -44,7 +44,7 @@ body {
     url("data:image/svg+xml,%3Csvg width='40' height='40' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='1' height='1' x='0' y='0' fill='%23ffffff08'/%3E%3C/svg%3E");
   color: #1a1a1a;
   min-height: 100vh;
-  cursor: url('mousepix.jpg'), auto;
+  cursor: url('icons8-cursor-32.png'), auto;
 }
 
 /* ===========================
@@ -96,6 +96,7 @@ body {
 
 .nav-links li a:hover {
   background: linear-gradient(180deg, #7aaaee 0%, #5588dd 100%);
+  cursor: url('icons8-hand-cursor-32.png'), auto; 
 }
 
 /* ===========================
@@ -148,7 +149,7 @@ body {
   border-radius: 3px;
   font-size: 10px;
   font-weight: bold;
-  cursor: pointer;
+  cursor: url('icons8-hand-cursor-32.png'), auto; 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -189,13 +190,14 @@ body {
   font-family: var(--font-main);
   font-size: 0.78rem;
   text-decoration: none;
-  cursor: pointer;
+  cursor: url('icons8-hand-cursor-32.png'), auto; 
   border-radius: 2px;
   white-space: nowrap;
 }
 
 .xp-action-btn:hover {
   background: linear-gradient(180deg, #fff 0%, #e8e4dc 100%);
+  cursor: url('icons8-hand-cursor-32.png'), auto; 
 }
 
 .xp-action-btn:active {
