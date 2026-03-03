@@ -454,6 +454,7 @@ footer {
   padding: 30px 20px 40px;
   display: flex;
   justify-content: center;
+  position: sticky;
 }
 
 .footer-window {

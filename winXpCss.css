@@ -16,22 +16,26 @@ body {
   overflow: hidden;
 }
 
+#Nostalgic{
+  width: 50%;
+  height:50%;
+  position: absolute;
+  text-align: center;
+  color: #0a2480;
+  z-index: 1;
+}
+
+
 /* Sky */
 #desktop::after {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg,
-    #1a7acc 0%,
-    #3b9ee0 25%,
-    #6ec6f5 55%,
-    #b8e4f9 78%,
-    #dff1fb 100%
-  );
+  background-image: url('windows_xp_bliss-wide.jpg');
   z-index: 0;
 }
 
-/* Rolling green hills */
+/* Rolling green hills */ 
 #desktop::before {
   content: '';
   position: absolute;
