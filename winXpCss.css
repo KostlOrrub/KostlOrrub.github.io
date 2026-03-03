@@ -22,7 +22,7 @@ body {
   position: absolute;
   text-align: center;
   color: #0a2480;
-  z-index: 1;
+  z-index: 10;
 }
 
 
@@ -35,64 +35,6 @@ body {
   z-index: 0;
 }
 
-/* Rolling green hills */ 
-#desktop::before {
-  content: '';
-  position: absolute;
-  bottom: 40px; /* sit above taskbar */
-  left: 0; right: 0;
-  height: 55%;
-  background:
-    radial-gradient(ellipse 130% 90% at 50% 115%, #5cc42e 0%, #3aaa18 30%, transparent 65%),
-    radial-gradient(ellipse 90%  70% at 15% 130%, #4db820 0%, transparent 60%),
-    radial-gradient(ellipse 90%  70% at 85% 130%, #4db820 0%, transparent 60%);
-  z-index: 1;
-}
-
-/* ── SUN ── */
-.sun {
-  position: absolute;
-  top: 7%;
-  right: 17%;
-  width: 72px;
-  height: 72px;
-  border-radius: 50%;
-  background: radial-gradient(circle, #fffaaa 0%, #ffe040 50%, #ffb800 100%);
-  box-shadow: 0 0 35px 12px rgba(255,220,50,.55), 0 0 70px 25px rgba(255,180,0,.25);
-  z-index: 2;
-}
-
-/* ── CLOUDS ── */
-.cloud {
-  position: absolute;
-  background: white;
-  border-radius: 50px;
-  opacity: 0.93;
-  z-index: 3;
-}
-.cloud::before,
-.cloud::after {
-  content: '';
-  position: absolute;
-  background: white;
-  border-radius: 50%;
-}
-
-.c1 { width: 170px; height: 48px; top: 8%;  left: 10%; }
-.c1::before { width: 75px;  height: 72px;  top: -38px; left: 22px; }
-.c1::after  { width: 54px;  height: 56px;  top: -30px; left: 72px; }
-
-.c2 { width: 125px; height: 38px; top: 14%; left: 39%; }
-.c2::before { width: 58px;  height: 56px;  top: -30px; left: 16px; }
-.c2::after  { width: 42px;  height: 44px;  top: -22px; left: 55px; }
-
-.c3 { width: 210px; height: 52px; top: 5%;  left: 62%; }
-.c3::before { width: 90px;  height: 85px;  top: -45px; left: 28px; }
-.c3::after  { width: 65px;  height: 68px;  top: -36px; left: 95px; }
-
-.c4 { width: 95px;  height: 30px; top: 21%; left: 80%; }
-.c4::before { width: 48px;  height: 46px;  top: -25px; left: 12px; }
-.c4::after  { width: 36px;  height: 38px;  top: -18px; left: 46px; }
 
 /* ── DESKTOP ICONS ── */
 .icons-area {
