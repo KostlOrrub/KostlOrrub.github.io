@@ -1,0 +1,282 @@
+/* ── RESET & BASE ── */
+* { margin: 0; padding: 0; box-sizing: border-box; user-select: none; }
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  font-family: 'Trebuchet MS', Tahoma, sans-serif;
+  cursor: url('icons8-cursor-32.png'), auto; 
+}
+
+/* ── DESKTOP / WALLPAPER ── */
+#desktop {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+#Nostalgic{
+  width: 50%;
+  height:50%;
+  position: absolute;
+  text-align: center;
+  color: #0a2480;
+  z-index: 10;
+}
+
+
+/* Sky */
+#desktop::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('windows_xp_bliss-wide.jpg');
+  z-index: 0;
+}
+
+
+/* ── DESKTOP ICONS ── */
+.icons-area {
+  position: absolute;
+  top: 16px;
+  left: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  z-index: 10;
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 72px;
+  cursor: default;
+  padding: 4px;
+  border-radius: 4px;
+  transition: background 0.1s;
+}
+.icon:hover  { background: rgba(255,255,255,.22); }
+.icon:active { background: rgba(80,130,255,.38); }
+
+.icon-img {
+  font-size: 34px;
+  margin-bottom: 5px;
+  filter: drop-shadow(1px 2px 2px rgba(0,0,0,.4));
+}
+
+.icon-label {
+  font-size: 11px;
+  color: white;
+  text-align: center;
+  text-shadow: 1px 1px 3px black, 0 0 6px black;
+  line-height: 1.3;
+  word-break: break-word;
+}
+
+/* ── TASKBAR ── */
+#taskbar {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 40px;
+  background: linear-gradient(180deg, #245edc 0%, #1941b5 8%, #2258d4 45%, #1941b5 50%, #1535a8 100%);
+  display: flex;
+  align-items: center;
+  z-index: 100;
+  box-shadow: 0 -1px 0 #0a2480, inset 0 1px 0 rgba(255,255,255,.25);
+  padding: 0 4px;
+  gap: 4px;
+}
+
+/* ── START BUTTON ── */
+#start-btn {
+  height: 34px;
+  padding: 0 14px 0 8px;
+  background: linear-gradient(180deg, #5cb848 0%, #3d9e2a 45%, #2e8a1c 50%, #3da62e 100%);
+  border: none;
+  border-radius: 0 12px 12px 0;
+  color: white;
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.4), 1px 0 4px rgba(0,0,0,.4);
+  text-shadow: 1px 1px 2px rgba(0,0,0,.5);
+  margin-left: -4px;
+}
+#start-btn:hover {
+  background: linear-gradient(180deg, #6dd455 0%, #4ab534 45%, #3aa020 50%, #4dc040 100%);
+}
+#start-btn:active {
+  background: linear-gradient(180deg, #2e8a1c 0%, #3da62e 100%);
+}
+
+.start-logo {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+}
+
+/* ── QUICK LAUNCH ── */
+#quick-launch {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  padding: 0 6px;
+  border-right: 1px solid rgba(255,255,255,.15);
+  border-left: 1px solid rgba(255,255,255,.15);
+  height: 100%;
+}
+
+.ql-icon {
+  font-size: 18px;
+  width: 26px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background 0.1s;
+}
+.ql-icon:hover { background: rgba(255,255,255,.2); }
+
+/* ── OPEN WINDOWS AREA ── */
+#open-windows { flex: 1; }
+
+/* ── SYSTEM TRAY ── */
+#tray {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: linear-gradient(180deg, #1535a8 0%, #1941b5 40%, #2258d4 100%);
+  border-left: 1px solid rgba(255,255,255,.15);
+  height: 100%;
+  padding: 0 10px;
+  border-radius: 2px 0 0 2px;
+}
+
+.tray-icons {
+  display: flex;
+  gap: 4px;
+  font-size: 14px;
+}
+
+#clock {
+  color: white;
+  font-size: 11px;
+  font-family: Tahoma, sans-serif;
+  text-shadow: 1px 1px 2px rgba(0,0,0,.5);
+  white-space: nowrap;
+}
+
+/* ── START MENU ── */
+#start-menu {
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  width: 380px;
+  background: white;
+  border-radius: 8px 8px 0 0;
+  box-shadow: 3px 0 12px rgba(0,0,0,.5), 0 -2px 12px rgba(0,0,0,.3);
+  overflow: hidden;
+  z-index: 200;
+}
+#start-menu.hidden { display: none; }
+
+.sm-header {
+  background: linear-gradient(90deg, #245edc 0%, #3b7de8 100%);
+  padding: 10px 14px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-radius: 8px 8px 0 0;
+}
+
+.sm-avatar {
+  width: 48px; height: 48px;
+  border-radius: 4px;
+  background: rgba(255,255,255,.25);
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgba(255,255,255,.5);
+}
+
+.sm-username {
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0,0,0,.4);
+}
+
+.sm-body {
+  display: flex;
+  border-top: 3px solid #245edc;
+}
+
+.sm-left {
+  flex: 1;
+  background: white;
+  padding: 8px 0;
+  border-right: 1px solid #cce;
+}
+
+.sm-right {
+  width: 155px;
+  background: #dce8f8;
+  padding: 8px 0;
+}
+
+.sm-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 16px;
+  font-size: 12px;
+  cursor: default;
+  transition: background 0.1s;
+}
+.sm-item:hover { background: #316ac5; color: white; }
+.sm-item.pinned { font-weight: bold; }
+
+.sm-icon { font-size: 16px; }
+
+.sm-divider {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 6px 10px;
+}
+
+.sm-footer {
+  background: linear-gradient(180deg, #1138b8 0%, #245edc 100%);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border-top: 2px solid #0a2480;
+}
+
+.sm-footer-btn {
+  background: linear-gradient(180deg, #4a78e0 0%, #2455cc 100%);
+  border: 1px solid #1a3a9a;
+  border-radius: 3px;
+  color: white;
+  font-size: 11px;
+  font-family: Tahoma, sans-serif;
+  padding: 4px 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.sm-footer-btn:hover { background: linear-gradient(180deg, #5888f0 0%, #3465dc 100%); }

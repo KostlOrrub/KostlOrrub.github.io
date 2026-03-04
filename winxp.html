@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Windows.ERR</title>
+  <link rel="stylesheet" href="winXpCss.css"/>
+</head>
+<body>
+
+  <div id="desktop">
+    <span class="icon-img"><p> Nostalgic isnt it?</p></span>
+
+    <!-- Desktop Icons -->
+    <div class="icons-area">
+
+      <div class="icon">
+        <div class="icon-img">🖥️</div>
+        <span class="icon-label">My Computer</span>
+      </div>
+
+      <div class="icon">
+        <div class="icon-img">📁</div>
+        <span class="icon-label">My Documents</span>
+      </div>
+
+      <div class="icon">
+        <div class="icon-img">🌐</div>
+        <span class="icon-label">Internet Explorer</span>
+      </div>
+
+      <div class="icon">
+        <div class="icon-img">🗑️</div>
+        <span class="icon-label">Recycle Bin</span>
+      </div>
+
+    </div>
+
+    <!-- Taskbar -->
+    <div id="taskbar">
+
+      <!-- Start Button -->
+      <button id="start-btn" onclick="toggleStart()">
+        <img src="WindowsXpLogo.png" alt="XP logo" class="start-logo"/>
+        <span>start</span>
+      </button>
+
+      <!-- Quick Launch -->
+      <div id="quick-launch">
+        <div class="ql-icon" title="Internet Explorer">🌐</div>
+        <div class="ql-icon" title="Windows Media Player">🎵</div>
+        <div class="ql-icon" title="Show Desktop">🗂️</div>
+      </div>
+
+      <!-- Open Windows (empty) -->
+      <div id="open-windows"></div>
+
+      <!-- System Tray -->
+      <div id="tray">
+        <div class="tray-icons">
+          <span title="Volume">🔊</span>
+          <span title="Network">🖧</span>
+        </div>
+        <div id="clock">12:00 PM</div>
+      </div>
+
+    </div>
+
+    <!-- Start Menu -->
+    <div id="start-menu" class="hidden">
+      <div class="sm-header">
+        <div class="sm-avatar">👤</div>
+        <div class="sm-username">Avery Hadley</div>
+      </div>
+      <div class="sm-body">
+        <div class="sm-left">
+          <div class="sm-item pinned"><span class="sm-icon">🌐</span> Internet Explorer</div>
+          <div class="sm-item pinned"><span class="sm-icon">📧</span> Outlook Express</div>
+          <hr class="sm-divider"/>
+          <div class="sm-item"><span class="sm-icon">📁</span> My Documents</div>
+          <div class="sm-item"><span class="sm-icon">🖼️</span> My Pictures</div>
+          <div class="sm-item"><span class="sm-icon">🎵</span> My Music</div>
+          <div class="sm-item"><span class="sm-icon">🖥️</span> My Computer</div>
+        </div>
+        <div class="sm-right">
+          <div class="sm-item"><span class="sm-icon">⚙️</span> Control Panel</div>
+          <div class="sm-item"><span class="sm-icon">🖨️</span> Printers & Faxes</div>
+          <div class="sm-item"><span class="sm-icon">❓</span> Help and Support</div>
+          <div class="sm-item"><span class="sm-icon">🔍</span> Search</div>
+          <div class="sm-item"><span class="sm-icon">▶️</span> Run...</div>
+        </div>
+      </div>
+      <div class="sm-footer">
+        <button class="sm-footer-btn" ><a href="index.html">🔒 Log Off</a></button>
+        <button class="sm-footer-btn">⏻ Turn Off Computer</button>
+      </div>
+    </div>
+
+  </div><!-- /desktop -->
+
+  <script>
+    // Live clock
+    function updateClock() {
+      const now = new Date();
+      let h = now.getHours(), m = now.getMinutes();
+      const ampm = h >= 12 ? 'PM' : 'AM';
+      h = h % 12 || 12;
+      document.getElementById('clock').textContent =
+        `${h}:${String(m).padStart(2,'0')} ${ampm}`;
+    }
+    updateClock();
+    setInterval(updateClock, 1000);
+
+    // Start menu toggle
+    function toggleStart() {
+      document.getElementById('start-menu').classList.toggle('hidden');
+    }
+    document.getElementById('desktop').addEventListener('click', e => {
+      if (!e.target.closest('#start-btn') && !e.target.closest('#start-menu'))
+        document.getElementById('start-menu').classList.add('hidden');
+    });
+  </script>
+
+</body>
+</html>
