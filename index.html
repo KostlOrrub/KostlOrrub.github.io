@@ -10,8 +10,9 @@
 
   <!-- NAVBAR -->
   <nav id="navbar">
-    <span class="no_show_link"><div class="nav-logo"><a class="no_show_link" href="winxp.html">💾</a> AVERY_HADLEY_PORTFOLIO.exe</div></span>
-    <ul class="nav-links">
+    <span class="no_show_link"><div class="nav-logo" onclick="playClickSound2()"><a class="no_show_link" href="winxp.html">💾</a> AVERY_HADLEY_PORTFOLIO.exe</div></span>
+        <audio id="mySound2">
+          <source src="Sounds\windowsStartup.mp4" type="audio/mp4"></audio>    <ul class="nav-links">
       <li><a href="#welcome-section"> Home</a></li>
       <li><a href="#projects"> Projects</a></li>
       <li><a href="#profile"> Profile</a></li>
@@ -286,6 +287,11 @@
     });
     function playClickSound() {
       var sound = document.getElementById("mySound");
+      sound.currentTime = 0;
+      sound.play();
+}
+    function playClickSound2() {
+      var sound = document.getElementById("mySound2");
       sound.currentTime = 0;
       sound.play();
 }
