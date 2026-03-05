@@ -29,7 +29,9 @@
         <div class="xp-buttons">
           <button class="xp-btn minimize">_</button>
           <button class="xp-btn maximize">□</button>
-          <button class="xp-btn close">✕</button>
+          <button class="xp-btn close" onclick="playClickSound()">✕</button>
+            <audio id="mySound">
+              <source src="Sounds\windowsError.mp4" type="audio/mp4"></audio>
         </div>
       </div>
       <div class="xp-body">
@@ -282,6 +284,12 @@
         setTimeout(() => { win.style.animation = ''; }, 400);
       });
     });
+    function playClickSound() {
+      var sound = document.getElementById("mySound");
+      sound.currentTime = 0;
+      sound.play();
+}
+
   </script>
 </body>
 <script src="soundsAndStuff.js"></script>
