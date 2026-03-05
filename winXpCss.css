@@ -22,16 +22,6 @@ body {
   overflow: hidden;
 }
 
-#Nostalgic{
-  width: 50%;
-  height:50%;
-  position: absolute;
-  text-align: center;
-  color: #0a2480;
-  z-index: 10;
-}
-
-
 /* Sky */
 #desktop::after {
   content: '';
@@ -58,13 +48,14 @@ body {
   flex-direction: column;
   align-items: center;
   width: 72px;
-  cursor: default;
+  cursor: url("icons8-hand-cursor-32.png"), auto;
   padding: 4px;
   border-radius: 4px;
   transition: background 0.1s;
 }
-.icon:hover  { background: rgba(255,255,255,.22); }
-.icon:active { background: rgba(80,130,255,.38); }
+.icon:hover  { background: rgba(255,255,255,.22); 
+  cursor: url("icons8-hand-cursor-32.png"), auto;}
+.icon:active { background: rgba(80,130,255,.38); cursor: url("icons8-hand-cursor-32.png"), auto;}
 
 .icon-img {
   font-size: 34px;
@@ -108,7 +99,7 @@ body {
   font-weight: bold;
   font-style: italic;
   letter-spacing: 0.5px;
-  cursor: pointer;
+  cursor: url("icons8-hand-cursor-32.png"), auto;
   display: flex;
   align-items: center;
   gap: 6px;
@@ -118,6 +109,7 @@ body {
 }
 #start-btn:hover {
   background: linear-gradient(180deg, #6dd455 0%, #4ab534 45%, #3aa020 50%, #4dc040 100%);
+  cursor: url("icons8-hand-cursor-32.png");
 }
 #start-btn:active {
   background: linear-gradient(180deg, #2e8a1c 0%, #3da62e 100%);
@@ -151,7 +143,7 @@ body {
   cursor: pointer;
   transition: background 0.1s;
 }
-.ql-icon:hover { background: rgba(255,255,255,.2); }
+.ql-icon:hover { background: rgba(255,255,255,.2); cursor: url("icons8-hand-cursor-32.png"), auto; }
 
 /* ── OPEN WINDOWS AREA ── */
 #open-windows { flex: 1; }
@@ -250,7 +242,7 @@ body {
   cursor: default;
   transition: background 0.1s;
 }
-.sm-item:hover { background: #316ac5; color: white; }
+.sm-item:hover { background: #316ac5; color: white; cursor:url("icons8-hand-cursor-32.png"), auto;}
 .sm-item.pinned { font-weight: bold; }
 
 .sm-icon { font-size: 16px; }
@@ -284,4 +276,12 @@ body {
   align-items: center;
   gap: 5px;
 }
-.sm-footer-btn:hover { background: linear-gradient(180deg, #5888f0 0%, #3465dc 100%); }
+
+.no_show_link{
+  text-decoration: none;
+  color: white;
+  cursor:url("icons8-hand-cursor-32.png"), auto;
+}
+
+.sm-footer-btn:hover { background: linear-gradient(180deg, #5888f0 0%, #3465dc 100%);
+  cursor:url("icons8-hand-cursor-32.png"), auto;}
