@@ -178,7 +178,10 @@ body {
 .xp-body {
   padding: 20px 24px;
 }
+.video-container{
+  border: 2px dashed var(--xp-border-outer);
 
+}
 .xp-icon-row {
   font-size: 2.5rem;
   text-align: center;
@@ -236,9 +239,7 @@ body {
     transparent 0px,
     transparent 3px,
     rgba(0,0,0,0.07) 3px,
-    rgba(0,0,0,0.07) 4px
-  );
-  background-repeat: repeat-x;
+    rgba(0,0,0,0.07) 4px);
   pointer-events: none;
   z-index: 1;
 }
@@ -331,7 +332,7 @@ body {
   font-family: var(--font-display);
   font-size: 2.2rem;
   color: #fff;
-  text-shadow: 2px 2px 0 rgba(0,0,0,0.5), 0 0 20px var(--accent-cyan);
+  text-shadow: 4px 4px 0 rgba(0,0,0,0.5), 0 0 20px var(--accent-cyan);
   letter-spacing: 2px;
 }
 
