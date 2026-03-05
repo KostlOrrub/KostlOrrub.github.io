@@ -124,6 +124,7 @@ body {
     8px 8px 20px rgba(0,0,0,0.4);
 }
 
+
 .xp-titlebar {
   background: linear-gradient(180deg, #4f8fde 0%, #1553a8 40%, #0e45a0 100%);
   border-radius: 6px 6px 0 0;
@@ -180,7 +181,10 @@ body {
 }
 .video-container{
   border: 2px dashed var(--xp-border-outer);
-
+  cursor:url("icons8-hand-cursor-32.png"), auto;
+}
+.video{
+  cursor:url("icons8-hand-cursor-32.png"), auto;
 }
 .xp-icon-row {
   font-size: 2.5rem;
