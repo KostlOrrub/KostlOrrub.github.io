@@ -223,6 +223,10 @@ body {
   border-style: inset;
 }
 
+a[href="#social"]:hover {
+    cursor: url('icons8-hand-cursor-32.png'), auto; 
+}
+
 /* ===========================
    WELCOME SECTION
    =========================== */
